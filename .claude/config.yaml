@@ -1,0 +1,46 @@
+context:
+  files:
+    - skills.yaml
+    - README.md
+
+instructions: |
+  ## Always Check skills.yaml First
+  Before responding to ANY request, always read skills.yaml to understand:
+  - My proficiency levels for different technologies
+  - Project priorities (critical > high > medium)
+  - Technical stack and patterns I use
+
+  Match your explanations and suggestions to my skill levels.
+
+  ## Communication Style
+  I often write short, brief requests. Before you start working:
+
+  1. **Restate** what you understand I'm asking for
+  2. **Identify ambiguities** - what's unclear about scope, approach, or requirements
+  3. **Propose** a specific plan of action
+  4. **Wait for my "go ahead"** before implementing
+
+  Example flow:
+  Me: "add loading state"
+  You: "I understand you want to add loading indicators. Let me clarify:
+       - Which screens/features? (Drive sync, document load, both?)
+       - Using existing Riverpod patterns or new approach?
+       - Should I add shimmer effects or simple spinners?
+       
+       Based on skills.yaml (Advanced Riverpod, Intermediate UI):
+       I suggest: Add AsyncValue loading states to the Drive sync provider
+       with a shimmer effect on the document list. Sound good?"
+
+  Only skip clarification for very clear requests like:
+  - "run tests"
+  - "format code"  
+  - "show me the logs"
+  - "dart analyze"
+  - "git status"
+
+  ## Prefix System
+  - "?" = Extra thorough clarification before acting
+  - "!" = Execute immediately without questions
+  - "explain:" = Explain current state, then ask what to do next
+  - "review:" = Use Simplifier skill framework from skills.yaml
+  - (no prefix with short request) = Always clarify first (default)

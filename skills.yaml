@@ -1,0 +1,133 @@
+# Skills for Krag Development
+
+skills:
+  - name: Flutter Development
+    description: |
+      Expert in Flutter framework with focus on desktop and web platforms.
+      Proficient with Dart 3.x features including records, patterns, and structured concurrency.
+      Experience with AppFlowyEditor for block-based rich text editing.
+    proficiency: expert
+    priority: critical
+    tags: [flutter, dart, mobile, desktop, web]
+
+  - name: Riverpod State Management
+    description: |
+      Advanced knowledge of Riverpod 2.0 including NotifierProvider, FutureProvider,
+      StreamProvider, and code generation with riverpod_generator.
+      Design patterns for complex state management in production apps.
+    proficiency: advanced
+    priority: critical
+    tags: [state-management, riverpod, providers, async]
+
+  - name: Local-First Architecture
+    description: |
+      Design and implementation of offline-first applications with Hive for local storage,
+      sync queues, and conflict resolution strategies. Strong understanding of
+      eventual consistency and CRDT-like patterns.
+    proficiency: advanced
+    priority: critical
+    tags: [local-first, offline, hive, persistence]
+
+  - name: Cryptography & Security
+    description: |
+      Implementation of AES-256-GCM encryption, PBKDF2 key derivation (600k iterations),
+      secure key wrapping, and end-to-end encryption architecture.
+      Knowledge of flutter_secure_storage and secure credential handling.
+    proficiency: advanced
+    priority: critical
+    tags: [security, encryption, cryptography, aes, pbkdf2]
+
+  - name: Google Drive API Integration
+    description: |
+      Integration with Google Drive API for cloud sync, OAuth2 authentication,
+      file upload/download, and conflict handling. Experience with PKCE flow for web.
+      Handles rate limiting, retry logic, and delta sync patterns.
+    proficiency: intermediate
+    priority: high
+    tags: [google-drive, oauth, sync, cloud]
+
+  - name: Web Platform Development
+    description: |
+      Flutter web deployment with focus on responsive design, browser compatibility
+      (Chrome, Safari, Firefox, Edge), and performance optimization. Experience with:
+      - URL routing and deep linking with go_router
+      - PWA features (offline support, install prompts, service workers)
+      - Responsive breakpoints and adaptive layouts
+      - Web-specific rendering (CanvasKit vs HTML renderer)
+      - CORS handling and web security considerations
+      - OAuth2 PKCE flow to bypass FedCM restrictions
+    proficiency: intermediate
+    priority: high
+    tags: [web, pwa, routing, responsive, oauth, cors]
+
+  - name: Code Generation
+    description: |
+      Use of build_runner and code generation for Hive models, Riverpod providers,
+      JSON serialization, and environmental variables. Custom build configurations
+      for different platforms and environments.
+    proficiency: intermediate
+    priority: high
+    tags: [build-runner, code-generation, hive, json-serializable]
+
+  - name: Flutter Testing
+    description: |
+      Unit tests, widget tests, and integration tests for Flutter applications.
+      Testing patterns for Riverpod providers and service layers. Use of mockito
+      for mocking dependencies, golden tests for UI regression, and test fixtures
+      for complex state scenarios.
+    proficiency: intermediate
+    priority: medium
+    tags: [testing, flutter-test, integration-tests, mockito]
+
+  - name: Dark UI Design
+    description: |
+      Implementation of dark theme interfaces with accent colors (#FF6B00),
+      responsive layouts, and professional UI components. Focus on accessibility,
+      contrast ratios, and consistent design systems.
+    proficiency: intermediate
+    priority: medium
+    tags: [ui, design, dark-theme, flutter-widgets, accessibility]
+
+  - name: Simplifier
+    description: |
+      Review the changes in this PR and provide:
+        1. **Summary**: What changed in 2-3 sentences
+        2. **Issues**: Any bugs, code smells, or anti-patterns
+        3. **Simplifications**: Ways to make the code simpler or more readable
+        4. **Security**: Any security concerns
+        5. **Suggestions**: Specific actionable improvements
+
+        Be direct and constructive. Focus on meaningful feedback only.
+    proficiency: expert
+    priority: workflow
+    tags: [simplification, problem-solving, critical-thinking, code-review]
+
+  - name: Clarification Assistant
+    description: |
+      When I give you a brief or vague request:
+      1. **Don't start implementing immediately**
+      2. **Interpret** what I likely mean based on project context
+      3. **Ask 2-3 specific questions** to clarify scope, approach, or requirements
+      4. **Suggest** what you think I want, then wait for confirmation
+      5. Only proceed after I confirm or provide more details
+
+      Example:
+      Me: "fix the sync"
+      You: "I see sync issues could mean:
+      - Google Drive API rate limiting?
+      - Conflict resolution logic?
+      - Local Hive storage corruption?
+      Which area should I focus on? Or would you like me to diagnose first?"
+    proficiency: expert
+    priority: workflow
+    tags: [communication, clarification, workflow]
+# Proficiency Levels:
+# - expert: Deep expertise, can architect solutions and mentor others
+# - advanced: Strong working knowledge, can handle complex scenarios independently
+# - intermediate: Solid practical experience, can implement features with occasional guidance
+
+# Priority Levels:
+# - critical: Core to the application's architecture and functionality
+# - high: Important for key features and user experience
+# - medium: Supporting features and quality improvements
+# - workflow: Process and development methodology tools
